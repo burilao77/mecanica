@@ -32,7 +32,7 @@ class CreateVehiclesTable extends AbstractMigration
               ->addColumn('register', 'string')
               ->addColumn('color', 'string')
               ->addColumn('brand', 'string')
-              ->addColumn('year', 'date')
+              ->addColumn('year', 'integer')
               ->addColumn('detail', 'string')
               ->addColumn('created', 'datetime')
               ->addColumn('modified', 'datetime')

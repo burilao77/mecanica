@@ -20,6 +20,7 @@ class VehiclesController extends AppController
      */
     public function index()
     {
+         $this->viewBuilder()->layout('admin/admin');
         $vehicles = $this->paginate($this->Vehicles);
 
         $this->set(compact('vehicles'));
@@ -74,6 +75,7 @@ class VehiclesController extends AppController
      */
     public function edit($id = null)
     {
+        $this->viewBuilder()->layout('admin/admin');
         $vehicle = $this->Vehicles->get($id, [
             'contain' => []
         ]);

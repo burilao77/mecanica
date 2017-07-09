@@ -74,7 +74,7 @@ class VehiclesTable extends Table
             ->notEmpty('brand');
 
         $validator
-            ->date('year')
+
             ->requirePresence('year', 'create')
             ->notEmpty('year');
 
